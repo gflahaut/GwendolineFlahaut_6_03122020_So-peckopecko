@@ -894,7 +894,7 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 
 
-var baseUrl = 'https://sopeckocko62.herokuapp.com/';
+var baseUrl = 'https://sopeckocko62.herokuapp.com';
 var AuthService = /** @class */ (function () {
     function AuthService(http, router) {
         this.http = http;
@@ -904,7 +904,7 @@ var AuthService = /** @class */ (function () {
     AuthService.prototype.createUser = function (email, password) {
         var _this = this;
         return new Promise(function (resolve, reject) {
-            _this.http.post(baseUrl + '/api/auth/signup', { email: email, password: password }).subscribe(function (response) {
+            _this.http.post(baseUrl + 'api/auth/signup', { email: email, password: password }).subscribe(function (response) {
                 resolve(response);
             }, function (error) {
                 reject(error);
@@ -977,7 +977,7 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 
 
-var baseUrl = 'https://sopeckocko62.herokuapp.com/';
+var baseUrl = 'https://sopeckocko62.herokuapp.com';
 var SaucesService = /** @class */ (function () {
     function SaucesService(http, auth) {
         this.http = http;
