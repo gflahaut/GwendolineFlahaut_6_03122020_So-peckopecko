@@ -3,7 +3,7 @@ import { Subject } from 'rxjs';
 import { Sauce } from '../models/Sauce.model';
 import { HttpClient } from '@angular/common/http';
 import { AuthService } from './auth.service';
-const baseUrl= 'https://sopeckocko62.herokuapp.com/';
+const baseUrl= 'https://sopeckocko62.herokuapp.com';
 
 @Injectable({
   providedIn: 'root'
