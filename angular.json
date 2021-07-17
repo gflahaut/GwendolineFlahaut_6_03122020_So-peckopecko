@@ -36,6 +36,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "baseHref": "GwendolineFlahaut_6_03122020",
             "outputPath": "dist/the-hottest-reviews",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -125,6 +126,10 @@
               "**/node_modules/**"
             ]
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
     },
