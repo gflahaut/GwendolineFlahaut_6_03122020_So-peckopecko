@@ -50,7 +50,13 @@ app.use(nocache());
 
 app.use("/img", express.static(path.join(__dirname, "img")));
 
+app.use(express.static(path.join(__dirname, '../frontend/build')));
+
 app.use("/api/sauces", sauceRoutes);
 app.use("/api/auth", userRoutes);
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname + '/../frontend/build/index.html'))
+})
 
 module.exports = app;
