@@ -44,7 +44,7 @@ app.use((req, res, next) => {
 
 app.use(express.json());
 
-app.use(helmet(),  helmet.xssFilter());
+app.use(helmet());
 
 app.use(nocache());
 
